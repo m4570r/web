@@ -172,24 +172,164 @@
 
 
 <!-- Sección de Tarifas -->
+<!-- Sección de Tarifas - Presentación en Acordeón -->
 <section id="tarifas" class="mt-5">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h3>Tarifas</h3>
-                <!-- Agrega contenido de la sección de Tarifas aquí -->
+        <h2 class="text-center">Nuestras Tarifas</h2>
+        <div class="accordion" id="tarifasAccordion">
+            <!-- Servicio 1: Acompañamiento -->
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h3 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Acompañamiento
+                        </button>
+                    </h3>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#tarifasAccordion">
+                    <div class="card-body">
+                        <p>Descripción del servicio de acompañamiento.</p>
+                        <p>Valor: $100</p>
+                        <p>En stock: Sí</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-                <h3>Tarifas</h3>
-                <!-- Agrega contenido de la sección de Tarifas aquí -->
+
+            <!-- Servicio 2: Carrosa Panorámica -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h3 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Carrosa Panorámica
+                        </button>
+                    </h3>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#tarifasAccordion">
+                    <div class="card-body">
+                        <p>Descripción del servicio de carrosa panorámica.</p>
+                        <p>Valor: $150</p>
+                        <p>En stock: No</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-                <h3>Tarifas</h3>
-                <!-- Agrega contenido de la sección de Tarifas aquí -->
+
+            <!-- Servicio 3: Bus de Acompañamiento -->
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h3 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Bus de Acompañamiento
+                        </button>
+                    </h3>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#tarifasAccordion">
+                    <div class="card-body">
+                        <p>Descripción del servicio de bus de acompañamiento.</p>
+                        <p>Valor: $200</p>
+                        <p>En stock: Sí</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Urna 1 -->
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h3 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Urna de Madera
+                        </button>
+                    </h3>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#tarifasAccordion">
+                    <div class="card-body">
+                        <p>Urna de madera de alta calidad.</p>
+                        <p>Material: Madera de Roble</p>
+                        <p>Valor: $300</p>
+                        <p>En stock: Sí</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Urna 2 -->
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h3 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Urna Elegante
+                        </button>
+                    </h3>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#tarifasAccordion">
+                    <div class="card-body">
+                        <p>Urna elegante para un tributo especial.</p>
+                        <p>Material: Metal Plateado</p>
+                        <p>Valor: $400</p>
+                        <p>En stock: No</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Urna 3 -->
+            <div class="card">
+                <div class="card-header" id="headingSix">
+                    <h3 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Urna de Cristal
+                        </button>
+                    </h3>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#tarifasAccordion">
+                    <div class="card-body">
+                        <p>Urna de cristal transparente y elegante.</p>
+                        <p>Material: Cristal de Alta Calidad</p>
+                        <p>Valor: $500</p>
+                        <p>En stock: Sí</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Urna 4 -->
+            <div class="card">
+                <div class="card-header" id="headingSeven">
+                    <h3 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            Urna de Cerámica
+                        </button>
+                    </h3>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#tarifasAccordion">
+                    <div class="card-body">
+                        <p>Urna de cerámica artesanal.</p>
+                        <p>Material: Cerámica Pintada a Mano</p>
+                        <p>Valor: $250</p>
+                        <p>En stock: Sí</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Urna 5 -->
+            <div class="card">
+                <div class="card-header" id="headingEight">
+                    <h3 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            Urna Ecológica
+                        </button>
+                    </h3>
+                </div>
+                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#tarifasAccordion">
+                    <div class="card-body">
+                        <p>Urna ecológica respetuosa con el medio ambiente.</p>
+                        <p>Material: Biodegradable</p>
+                        <p>Valor: $150</p>
+                        <p>En stock: Sí</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
 
 <!-- Sección de Formulario de Contacto -->
 <section id="contacto" class="mt-5">
