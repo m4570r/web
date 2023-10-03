@@ -118,35 +118,58 @@
 </section>
 
 
-<!-- Sección de Clientes -->
+<!-- Sección de Clientes - Carrusel de Comentarios -->
 <section id="clientes" class="mt-5">
     <div class="container">
         <h2 class="text-center">Lo que dicen nuestros clientes</h2>
         <div class="row">
-            <div class="col-md-4">
-                <div class="testimonial">
-                    <p>"Excelente servicio, muy profesional y compasivo. Los recomendaría a todos mis amigos y familiares."</p>
-                    <p class="client-name">John Doe</p>
-                    <p class="client-date">Enero 15, 2023</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="testimonial">
-                    <p>"Estoy muy agradecido por el apoyo que recibí durante este difícil proceso. Las urnas que ofrecen son hermosas y significativas."</p>
-                    <p class="client-name">Jane Smith</p>
-                    <p class="client-date">Febrero 5, 2023</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="testimonial">
-                    <p>"La atención personalizada que brindaron a mi familia fue excepcional. Siempre recordaremos su amabilidad y profesionalismo."</p>
-                    <p class="client-name">Robert Johnson</p>
-                    <p class="client-date">Marzo 20, 2023</p>
+            <div class="col-md-12">
+                <div id="customerCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicadores del carrusel -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#customerCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#customerCarousel" data-slide-to="1"></li>
+                        <li data-target="#customerCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Comentarios de clientes -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="testimonial">
+                                <p>"Excelente servicio, muy profesional y compasivo. Los recomendaría a todos mis amigos y familiares."</p>
+                                <p class="client-name">John Doe</p>
+                                <p class="client-date">Enero 15, 2023</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial">
+                                <p>"Estoy muy agradecido por el apoyo que recibí durante este difícil proceso. Las urnas que ofrecen son hermosas y significativas."</p>
+                                <p class="client-name">Jane Smith</p>
+                                <p class="client-date">Febrero 5, 2023</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial">
+                                <p>"La atención personalizada que brindaron a mi familia fue excepcional. Siempre recordaremos su amabilidad y profesionalismo."</p>
+                                <p class="client-name">Robert Johnson</p>
+                                <p class="client-date">Marzo 20, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controles del carrusel -->
+                    <a class="carousel-control-prev" href="#customerCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#customerCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
 <!-- Sección de Tarifas -->
 <section id="tarifas" class="mt-5">
