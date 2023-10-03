@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prueba de Estrés</title>
+    <style>
+        /* Definimos un estilo CSS que se aplicará a los elementos div generados */
+        .stress {
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Botones para iniciar y detener la prueba de estrés -->
+    <button onclick="startStressTest()">Iniciar Prueba de Estrés</button>
+    <button onclick="stopStressTest()">Detener Prueba de Estrés</button>
+    
+    <!-- Un contenedor donde se crearán elementos div -->
+    <div id="container"></div>
+
+    <script>
+        // Declaramos una variable para el intervalo de estrés
+        let stressInterval;
+        // Declaramos una variable para llevar el control de elementos creados
+        let elementsCreated = 0;
+        // Declaramos el límite de elementos a crear
+        const maxElements = 5000;
+        // Obtenemos una referencia al elemento div con el id "container"
+        const container = document.getElementById('container');
+
+        // Esta función crea elementos div con la clase "stress"
+        function createStressElements() {
+            for (let i = 0; i < 100; i++) {
+                if (elementsCreated >= maxElements) {
+                    stopStressTest(); // Detener la prueba si alcanzamos el límite
+                    return;
+                }
+                const div = document.createElement('div'); // Creamos un elemento div
+                div.className = 'stress'; // Le asignamos la clase "stress"
+                container.appendChild(div); // Lo añadimos al contenedor
+                elementsCreated++; // Aumentamos el contador de elementos
+            }
+        }
+
+        // Esta función inicia la prueba de estrés al establecer un intervalo que llama a createStressElements()
+        function startStressTest() {
+            if (!stressInterval) {
+                stressInterval = setInterval(createStressElements, 100);
+            }
+        }
+
+        // Esta función detiene la prueba de estrés al borrar el intervalo
+        function stopStressTest() {
+            clearInterval(stressInterval);
+            stressInterval = null;
+        }
+    </script>
+</body>
+</html>
